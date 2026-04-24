@@ -1,0 +1,87 @@
+/* Reset */
+*{margin:0;padding:0;box-sizing:border-box}
+
+/* Background */
+body{
+  font-family:'Segoe UI',Tahoma,Verdana,sans-serif;
+  background:linear-gradient(120deg,#89f7fe,#66a6ff);
+  min-height:100vh;
+}
+
+/* Header */
+header{
+  background:linear-gradient(to right,#1e3c72,#2a5298);
+  color:#fff;text-align:center;
+  padding:30px 10px;
+  box-shadow:0 4px 10px rgba(0,0,0,.2);
+}
+header h1{font-size:36px;letter-spacing:2px}
+header p{font-size:18px;margin-top:8px}
+
+/* Navigation */
+nav{
+  background:#0f2027;
+  text-align:center;
+  padding:15px;
+  position:sticky;top:0;
+}
+nav a{
+  color:#fff;text-decoration:none;
+  margin:15px;font-size:18px;
+  font-weight:700;padding:8px 18px;
+  border-radius:25px;transition:.3s;
+}
+nav a:hover{background:#66a6ff;color:#000}
+
+/* Glass Card Section */
+section{
+  width:85%;
+  margin:40px auto;
+  padding:30px;
+  border-radius:15px;
+
+  background:linear-gradient(135deg,rgba(255,255,255,0.85),rgba(255,255,255,0.65));
+  backdrop-filter:blur(10px);
+
+  border:1px solid rgba(255,255,255,0.4);
+  box-shadow:0 10px 25px rgba(0,0,0,0.25);
+
+  line-height:1.8;
+  animation:fadeIn 1s ease-in;
+}
+
+section h2{
+  color:#1e3c72;margin-bottom:15px;
+  border-bottom:3px solid #66a6ff;
+  display:inline-block;padding-bottom:5px;
+}
+
+/* Image */
+img{
+  display:block;margin:20px auto;
+  width:160px;height:160px;
+  border-radius:50%;
+  border:5px solid #66a6ff;
+}
+
+/* Lists */
+ul,ol{margin-left:25px;font-size:18px}
+
+/* Footer */
+footer{
+  text-align:center;padding:15px;
+  background:#1e3c72;color:#fff;
+  margin-top:30px;
+}
+
+/* Animation */
+@keyframes fadeIn{
+  from{opacity:0;transform:translateY(20px)}
+  to{opacity:1;transform:translateY(0)}
+}
+
+/* Responsive */
+@media(max-width:768px){
+  nav a{display:block;margin:10px 0}
+  section{width:95%}
+}
